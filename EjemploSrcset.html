@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initialscale=1.0">
+    <link rel="stylesheet" href="EjemploSrcset.css">
+    <title>Ejemplo conjunto de imágenes | Mi sitio web</title>
+</head>
+
+<body>
+    <main>
+        <h1> Imagenes cambian segun resolución</h1>
+        <img 
+        src="https://www.bennet.org/blog/responsive-images-busy-people/images/curiosity-medium.jpg"
+        alt="Mars Curiosity Rover takes an excellent selfie."
+        srcset="
+            https://www.bennet.org/blog/responsive-images-busy-people/images/curiosity-large.jpg  1120w,
+            https://www.bennet.org/blog/responsive-images-busy-people/images/curiosity-medium.jpg 720w,
+            https://www.bennet.org/blog/responsive-images-busy-people/images/curiosity-small.jpg  400w"
+        sizes="
+            (min-width: 40em) calc(66.6vw - 4em),
+            100vw"
+        >
+</main>
+</body>
